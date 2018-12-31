@@ -7,6 +7,20 @@ body,html{
 body{
     font-family: sans-serif;
     text-align: center;
+    background: -moz-radial-gradient(
+                    #376BBB,
+                    #2D5772,
+                    #1C3545
+                );
+    background: -webkit-radial-gradient(
+            #376BBB,
+            #2D5772,
+            #1C3545
+    );
+}
+
+h1{
+    color: #eee
 }
 
 .nubes, .mapa{
@@ -42,6 +56,7 @@ body{
     background-size: cover;
 
     -moz-animation: tierra-girando 5s infinite linear;
+    -webkit-animation: tierra-girando 5s infinite linear;
 }
 
 @-webkit-keyframes tierra-girando {

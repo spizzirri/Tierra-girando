@@ -1,0 +1,85 @@
+.estrella{
+    width: 2px;
+    height: 2px;
+    background: #fff;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.estrella:nth-child(1){
+    top: 5%;
+    left: 30%;
+}
+
+.estrella:nth-child(2){
+    top: 5%;
+    left: 20%;
+}
+.estrella:nth-child(3){
+    top: 20%;
+    left: 30%;
+}
+.estrella:nth-child(4){
+    top: 30%;
+    left: 40%;
+}
+.estrella:nth-child(5){
+    top: 70%;
+    left: 20%;
+}
+.estrella:nth-child(6){
+    top: 75%;
+    left: 30%;
+}
+.estrella:nth-child(7){
+    top: 80%;
+    left: 50%;
+}
+.estrella:nth-child(8){
+    top: 75%;
+    left: 70%;
+}
+.estrella:nth-child(9){
+    top: 50%;
+    left: 80%;
+}
+.estrella:nth-child(10){
+    top: 40%;
+    left: 85%;
+}
+.estrella:nth-child(11) {
+    top: 30%;
+    left: 75%;
+}
+.estrella:nth-child(12){
+    top: 90%;
+    left: 60%;
+}
+
+.estrella:nth-child(even){
+    -webkit-animation: estrella-par 2s infinite;
+    -moz-animation: estrella-par 2s infinite;
+}
+
+@-webkit-keyframes estrella-par {
+    0%, 80%{
+        box-shadow: 0 0 3px 3px rgba(255, 255, 255, .3);
+    }
+    100%{
+        box-shadow: 0 0 16px 16px rgba(255, 255, 255, .3);
+    }
+}
+
+.estrella:nth-child(odd){
+    -webkit-animation: estrella-impar 2s infinite;
+    -moz-animation: estrella-impar 2s infinite;
+}
+
+@-webkit-keyframes estrella-impar {
+    0%, 35%, 80%{
+        box-shadow: 0 0 3px 3px rgba(255, 255, 255, .3);
+    }
+    45%{
+        box-shadow: 0 0 16px 16px rgba(255, 255, 255, .3);
+    }
+}
