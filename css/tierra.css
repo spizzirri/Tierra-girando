@@ -19,10 +19,6 @@ body{
     );
 }
 
-h1{
-    color: #eee
-}
-
 .nubes, .mapa{
     position: absolute;
     top: 0;
